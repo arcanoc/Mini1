@@ -23,3 +23,4 @@ sr.reveal('.about-img,.service-item, .about-text',{origin: 'bottom'});
 sr.reveal('.about-text h2,.text-center, .right-contact h2',{origin: 'top'});
 sr.reveal('.left-contact', {origin: 'left'});
 sr.reveal('.end-section', {origin: 'top'});
+
