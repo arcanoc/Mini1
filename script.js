@@ -6,22 +6,23 @@ header.classList.toggle ("sticky", window.scrollY > 100)
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
 menu.oneclick = () => {
     menu.classList.toggle('bx-x');
-    menu.classList.toggle('open');
+    navlist.classList.toggle('open');
 };
-window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    navlist.classList.remove('open');
-}
+
 const sr = ScrollReveal ({
     distance: '40px',
     duration: 2050,
     delay: 200,
     reset: true
-})
-sr.reveal('.hero-text, {origin: 'top'});
-sr.reveal('.about-img,.service-item, .about-text' {origin: 'bottom'});
-sr.reveal('.about-text h2,.text-center, .right-contact h2' {origin: 'top'});
+ 
+});
+sr.reveal('.hero-text', {origin: 'top'});
+sr.reveal('.about-img,.service-item, .about-text',{origin: 'bottom'});
+sr.reveal('.about-text h2,.text-center, .right-contact h2',{origin: 'top'});
 sr.reveal('.left-contact', {origin: 'left'});
 sr.reveal('.end-section', {origin: 'top'});
